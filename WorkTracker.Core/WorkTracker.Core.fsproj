@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>dotnet-WorkTracker.Core-E5F3871F-FAAE-4E65-B97C-136C53F8E978</UserSecretsId>
+  </PropertyGroup>
+
+  
+  <ItemGroup>
+    <Compile Include="Domain\DomainTypes.fs" />
+    <Compile Include="Domain\Events.fs" />
+    <Compile Include="Domain\Commands.fs" />
+    <Compile Include="Application\Processors.fs" />
+    <Compile Include="Application\CommandHandling.fs" />
+    <Compile Include="MessageListner.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+  </ItemGroup>
+</Project>
